@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "ad47852205704974",
+    "type": "split",
+    "children": [
+      {
+        "id": "975d6abf452be7ce",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "General Data Science/Fuzzy Logic - String Approximate Matching.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d7f4a187400ddefd",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5c4c7024b6513af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d72019532f8ba7e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "50b9a7f5ae8fe1a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 336
+  },
+  "right": {
+    "id": "cfddba8f4c80e7f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "08e3db164c1595fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6bf01eccedaa974",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "General Data Science/Fuzzy Logic - String Approximate Matching.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "975d6abf452be7ce",
+  "lastOpenFiles": [
+    "General Data Science/Fuzzy Logic - String Approximate Matching.md",
+    "Accounting/Balance Sheet Formulas (and ratios).md",
+    "Accounting/Inflation Data Source.md",
+    "Accounting/WSJ Market Example.md",
+    "Accounting/JSE SENS Reports.md",
+    "Markdown/LaTeX.md",
+    "ML/Unsupervised/Outlier Detection - Isolation Forests.md",
+    "ML/Unsupervised/KMeans PySpark.md",
+    "Pandas/GroupBy String Mode.md",
+    "Pandas/Groupby Multi-Index nlargest on 2nd index.md"
+  ]
+}
