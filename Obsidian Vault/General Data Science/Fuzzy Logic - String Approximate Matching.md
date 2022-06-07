@@ -100,11 +100,10 @@ choices = ["3000m Steeplechase", "Men's 3000 meter steeplechase",               
 process.extract("Men's 3000 Meter Steeplechase", choices,/
 				scorer=fuzz.token_sort_ratio)
 
-#Output  
 > [("Men's 3000 meter steeplechase", 100),  
-> ('mens 3000 meter SteepleChase', 95),  
-> ('3000m STEEPLECHASE MENS', 85),  
-> ('3000m Steeplechase', 77)]
+	('mens 3000 meter SteepleChase', 95),  
+	('3000m STEEPLECHASE MENS', 85),  
+	('3000m Steeplechase', 77)]
 ```
 
 ### ExtractOne
@@ -113,11 +112,41 @@ process.extract("Men's 3000 Meter Steeplechase", choices,/
 ```python
 process.extractOne("Men's 3000 Meter Steeplechase", choices,
 				   scorer=fuzz.token_sort_ratio)
-#Output  
 > ("Men's 3000 meter steeplechase", 100)
 ```
 
 
+## Merging DataFrames On Match
+[Towards Data Science: String Matching with FuzzyWuzzy](https://towardsdatascience.com/string-matching-with-fuzzywuzzy-e982c61f8a84)
+```python
+# Casting the name column of both dataframes into lists
+df1_names = list(df_1.name.unique())  
+df2_names = list(df_2.name.unique())  
 
+# Defining a function to return the match and similarity score of the fuzz.ratio() scorer. The function will take in a term(name), list of terms(list_names), and a minimum similarity score(min_score) to return the match.
+def match_names(name, list_names, min_score=0):  
+    max_score = -1  
+    max_name = ''  
+    for x in list_names:  
+        score = fuzz.ratio(name, x)  
+        if (score > min_score) & (score > max_score):  
+            max_name = x  
+            max_score = score  
+    return (max_name, max_score)  
 
+# For loop to create a list of tuples with the first value being the name from the second dataframe (name to replace) and the second value from the first dataframe (string replacing the name value). Then, casting the list of tuples as a dictionary.
+names = []  
+for x in doping_names:  
+    match = match_names(x, athlete_names, 75)  
+    if match[1] >= 75:  
+        name = ('(' + str(x), str(match[0]) + ')')  
+        names.append(name)  
+name_dict = dict(names)  
+name_dict
 
+# Using the dictionary to replace the keys with the values in the 'name' column for the second dataframe
+df_2.name = df_2.name.replace(name_dict)
+
+# match on fuzzy 'name'
+combined_dataframe = pd.merge(df_1, df_2, how='left', on='name')
+```
