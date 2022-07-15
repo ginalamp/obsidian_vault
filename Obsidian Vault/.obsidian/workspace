@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "General Data Science/Fuzzy Logic - String Approximate Matching.md",
+            "file": "Git/Markdown to other file types.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336
+    "width": 336,
+    "collapsed": true
   },
   "right": {
     "id": "cfddba8f4c80e7f5",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "General Data Science/Fuzzy Logic - String Approximate Matching.md",
+                "file": "Git/Markdown to other file types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "975d6abf452be7ce",
   "lastOpenFiles": [
+    "Git/Tutorial - New Git Process.md",
+    "Mac/VS Code Shortcuts.md",
+    "Pandas/For loops.md",
+    "JavaScript/Max React Udemy.md",
     "General Data Science/Fuzzy Logic - String Approximate Matching.md",
-    "Accounting/Balance Sheet Formulas (and ratios).md",
-    "Accounting/Inflation Data Source.md",
-    "Accounting/WSJ Market Example.md",
-    "Accounting/JSE SENS Reports.md",
-    "Markdown/LaTeX.md",
-    "ML/Unsupervised/Outlier Detection - Isolation Forests.md",
-    "ML/Unsupervised/KMeans PySpark.md",
-    "Pandas/GroupBy String Mode.md",
-    "Pandas/Groupby Multi-Index nlargest on 2nd index.md"
+    "Untitled.md",
+    "Pandas/Groupby/GroupBy String Mode.md",
+    "JavaScript/Mosh JavaScript Udemy.md",
+    "SQL/Get Athena Column Names & Convert to JSON with Vim.md",
+    "SQL/Athena to S3 Output.md"
   ]
 }
